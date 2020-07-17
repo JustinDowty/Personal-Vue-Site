@@ -128,7 +128,7 @@
         </div>
         <h2 class="mb-20">This site!</h2>
         <p class="mb-20">I built this SPA web app with Vue.js. All HTML/CSS/JS is written from scratch.</p>
-        <a href="" target="_blank"><i class="fab fa-github-square pr-10"></i>GitHub</a>
+        <a href="https://github.com/JustinDowty/Personal-Vue-Site" target="_blank"><i class="fab fa-github-square pr-10"></i>GitHub</a>
       </div>
     </div>
   </div>
