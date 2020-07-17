@@ -1,0 +1,68 @@
+/** Blog Body Styles */
+body.blog { background: url('../assets/chipback.jpg') #043007 !important; background-size: 100%; overflow:hidden; }
+body.blog #top-nav { display: none; }
+.top-logo { background: linear-gradient(105deg, rgba(23, 97, 216, .75), rgba(53, 123, 234, 75)); }
+.blog-top { padding: 15px 0; display: flex; flex-direction: column; height: 100vh; }
+.blog-container { border-radius: 10px; overflow-y: auto; overflow-x: hidden; background: linear-gradient(105deg, rgba(44,44,44,.98), rgba(77,77,77,.98)); 
+   flex: 1; padding: 20px 50px; }
+.blog-title { position: relative; width: 100%; text-align: center; }
+.blog-underline { margin-left: auto; margin-right: auto; max-width: 300px; width: 100%; border-bottom: solid rgb(23, 97, 216) 2px; }
+#blog-subtitle { margin-bottom: 10px; font-size: 25px; display: inline-block; position: relative; }
+.blog-entry { margin-top: 25px; padding: 0 30px; position: relative; }
+.blog-entry p { margin-bottom: 5px; }
+.blog a:hover { color: #f48413; }
+.blog-border { position:absolute; top:0; bottom:30px; left: 0; border-left: solid rgb(23, 97, 216) 2px; }
+.blog-go-back { position: absolute; top: 0; left: 0; right: 0; }
+.blog-go-back .top-nav-left { padding: 10px; }
+.blog-go-back .top-nav-logo { font-size: 72px; line-height: 76px; padding: 0 10px; }
+.blog-go-back:hover + .blog-nav, .blog-nav:hover { top: 15px; }
+.blog-go-back:hover .top-nav-left { padding-right: 300px; }
+.top-nav-left:hover { padding-right: 300px; }
+.blog-menu-text { font-size: 36px; padding-top: 3px; }
+.blog-nav { position: absolute; top: -35px; left: 95px; background: rgba(44,44,44,.98); max-width: 100%; transition: .5s all; }
+.blog-nav a { text-decoration: none; margin: 5px; }
+.orange-text { color: #f48413; }
+.blog-read-more { text-align: right; }
+.blog-read-more a { margin-left: auto; text-decoration: none; }
+.blog-read-more a:hover { color: rgb(23, 97, 216) }
+
+/** Blog Post */
+.blog-post-body p { margin-bottom: 20px; }
+.gist-section { margin-bottom: 30px; }
+.blog-post-border { position:absolute; top:105px; bottom:10px; left: 0; border-left: solid rgb(23, 97, 216) 2px; }
+
+/** Scroll Bar */
+/* width */
+body.blog ::-webkit-scrollbar {
+  transition: .3s all;
+  width: 8px;
+  height: 4px;
+}
+
+/* Track */
+body.blog ::-webkit-scrollbar-track {
+  background: black; 
+}
+
+/* Handle */
+body.blog ::-webkit-scrollbar-thumb {
+  background: rgb(23, 97, 216); 
+  border-radius: 4px;
+}
+
+.gist-section tr { display: none; }
+
+@media(max-width: 768px) {
+  body.blog { overflow: auto; }
+  .blog-top { padding-top: 80px; height: auto; min-height: 100vh; }
+  .blog-go-back, .blog-nav { display: none; }
+  .blog-container { padding: 20px 15px; }
+  .blog-entry { padding: 0 0 0 15px; }
+  .blog-nav { display: none; }
+  body.blog #mobile-nav { background: linear-gradient(105deg, rgba(44,44,44,.98), rgba(77,77,77,.98)) }
+
+  body.blog ::-webkit-scrollbar {
+    transition: .3s all;
+    width: 5px;
+  }
+}
